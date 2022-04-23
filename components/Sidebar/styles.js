@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Avatar, Button } from '@material-ui/core';
+import { Avatar, Button } from '@mui/material';
 
 export const Container = styled.div``;
 
