@@ -16,6 +16,7 @@ export default function Chat({ id, users }) {
       where('email', '==', getRecipientEmail(users, auth.currentUser.email))
     )
   );
+
   const recipient = useMemo(
     () => recipientSnapshot?.docs?.[0]?.data(),
     [recipientSnapshot]
